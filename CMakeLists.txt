@@ -16,6 +16,6 @@ find_package(Eigen3 3.3 REQUIRED NO_MODULES)
 
 add_executable(CPURAYTRACER main.cpp Engine.h Renderer.h Camera.h Vertex.h LinearAlgebra.h Triangle.h Texture.h Model.h ResourceLoader.h Octree.h RayHit.h Box.h)
 
-include_directories(. /usr/include/ stb)
+include_directories(. stb)
 
-target_link_libraries(CPURAYTRACER Eigen3::Eigen /usr/lib/libassimp.so)
+target_link_libraries(CPURAYTRACER Eigen3::Eigen libassimp.so)
