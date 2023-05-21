@@ -53,6 +53,12 @@ public:
             el.setRotation(rotation);
         }
 
+       // auto pos = renderer->camera.getPos();
+       // auto x = pos.x() >= -10 ? pos.x() - 0.01 * dt : 0;
+       // pos += Vec3f{x, pos.y(), pos.z()};
+
+       // renderer->camera.setPos(pos);
+
         return true;
     }
 };

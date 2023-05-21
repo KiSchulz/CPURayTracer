@@ -78,6 +78,20 @@ public:
         return pos;
     }
 
+    void setPos(const Vec3f &nPos) {
+        rayBufferIsValid = false;
+        pos = nPos;
+    }
+
+    const Vec3f &getDirection() {
+        return direction;
+    }
+
+    void setDirection(const Vec3f &nDir) {
+        rayBufferIsValid = false;
+        direction = nDir;
+    }
+
     const std::vector<Vec3f> &getRays() {
         if (rayBufferIsValid) {
             return rayBuffer;
