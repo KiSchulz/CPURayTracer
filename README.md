@@ -6,7 +6,7 @@ A simple cpu ray tracer.
 
 ## Dependencies
 _________________
-There a four dependencies.
+There are four dependencies.
 1. Eigen
 2. Open Asset Import Library
 3. stb_image
