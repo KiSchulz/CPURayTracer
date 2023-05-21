@@ -23,10 +23,13 @@ _______________
 First clone the repository. Next use the following commands:
 ```bash
 cd CPURayTracer
-#initializes the olcPixelGameEngine folder
+```
+Initialize the olcPixelGameEngine folder.
+```bash
 git submodule init
 git submodule update
-
+```
+```bash
 mkdir build
 cd build
 cmake ..
